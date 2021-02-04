@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FOMO SDK</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>        
+</head>
+<body>
+    <button id="openSignUp">Open Modal</button>
+    <fomo-gratisfaction></fomo-gratisfaction>
+
+    <script type="module" src="./fomosdk.js"></script>
+
+    <script>
+        const openSignUp = document.getElementById("openSignUp");
+        const component = document.querySelector("fomo-gratisfaction");
+        openSignUp.addEventListener("click", () => {
+            component.open();
+        });
+    </script>
+</body>
+</html>
